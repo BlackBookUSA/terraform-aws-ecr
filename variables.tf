@@ -61,3 +61,8 @@ variable "max_image_count" {
   description = "How many Docker Image versions AWS ECR will store"
   default     = 500
 }
+
+variable "null_label_regex_replace_characters" {
+  description = "characters to not replace in null label"
+  default     = "/[^a-zA-Z0-9-]/"
+}
